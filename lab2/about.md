@@ -1,0 +1,1 @@
+Basic work with symbol data. The task is to create a programm that deletes a work in a string after given.
