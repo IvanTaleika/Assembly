@@ -1,4 +1,4 @@
-    .model small  
+    .model tiny  
     .data  
     hello db "Hello, world!",0Dh,0Ah,'$'
     .code 
