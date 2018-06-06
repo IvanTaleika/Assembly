@@ -10,7 +10,7 @@
     defaultDirection equ right
 
     pointsUntilSpeedup equ 02h
-    defaultInterruptsForMove equ 01h
+    defaultInterruptsForMove equ 06h
     
     defaultSnakeLength equ 0005h
     maxSnakeLength equ 2000 
@@ -331,7 +331,7 @@ moveRight:
     cmp al, dl
     mov ax, bx
     je isCrash
-    sub ax, videobuffLengthInBytes
+    sub ax, 160
     jmp isCrash 
 moveBottom:    
     cmp dl, bottom
